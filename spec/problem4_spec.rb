@@ -50,4 +50,10 @@ RSpec.describe Problem4, '#arrange' do
       is_expected.to eq 65521
     end
   end
+  context 'when list is [5, 50, 56]' do
+    let(:list) { [5, 50, 56] }
+    it 'should return 56550' do
+      is_expected.to eq 56550
+    end
+  end
 end
