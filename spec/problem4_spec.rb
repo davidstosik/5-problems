@@ -38,4 +38,16 @@ RSpec.describe Problem4, '#arrange' do
       is_expected.to eq 95651
     end
   end
+  context 'when list is [521, 5, 3]' do
+    let(:list) { [521, 5, 3] }
+    it 'should return 55213' do
+      is_expected.to eq 55213
+    end
+  end
+  context 'when list is [521, 5, 6]' do
+    let(:list) { [521, 5, 6] }
+    it 'should return 65521' do
+      is_expected.to eq 65521
+    end
+  end
 end
