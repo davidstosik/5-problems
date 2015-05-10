@@ -18,4 +18,13 @@ class Problem4
       list[0] + arrange(list[1..-1])
     end
   end
+
+  def self.svpino list
+    return '' if list.nil? || list.empty?
+    return list[0] if list.count == 1
+    list = list.map &:to_s
+    list.sort do |v1, v2|
+      (v2 + v1) <=> (v1 + v2)
+    end.join
+  end
 end
